@@ -1,0 +1,36 @@
+﻿.sh-font-title {
+    font-family: 'Playfair Display SC', sans-serif;  
+}
+
+.hs-style-default {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+}
+
+.fs-16 {
+    font-size: 16pt;
+}
+
+.fs-20 {
+    font-size: 20pt;
+}
+
+.fs-24 {
+    font-size: 24pt;
+}
+
+.fs-96 {
+    font-size: 96pt;
+}
+
+.color-primary {
+    color: #FFFFFF;
+}
+
+.color-secondary {
+    color: #808080;
+}
+
+.color-text {
+    color: #000000;
+}

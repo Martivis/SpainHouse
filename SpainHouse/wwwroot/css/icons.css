@@ -1,0 +1,41 @@
+﻿.icon-phone {
+    background-image: url("../resources/svg/icon-phone.svg");
+    width: 16px;
+    height: 15px;
+}
+
+.icon-spain {
+    background-image: url("../resources/svg/icon-spain.svg");
+    width: 18px;
+    height: 18px;
+}
+
+.icon-russia {
+    background-image: url("../resources/svg/icon-russia.svg");
+    width: 18px;
+    height: 18px;
+}
+
+.icon-whatsapp {
+    background-image: url("../resources/svg/icon-whatsapp.svg");
+    width: 25px;
+    height: 25px;
+}
+
+.icon-instagram {
+    background-image: url("../resources/svg/icon-instagram.svg");
+    width: 29px;
+    height: 29px;
+}
+
+.icon-facebook {
+    background-image: url("../resources/svg/icon-facebook.svg");
+    width: 29px;
+    height: 29px;
+}
+
+.sh-logo {
+    background-image: url("../resources/svg/sh-logo.svg");
+    width: 255px;
+    height: 60px;
+}
