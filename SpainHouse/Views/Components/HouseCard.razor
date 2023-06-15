@@ -1,0 +1,56 @@
+﻿@using SpainHouse.Models
+
+<div class="card p-0 m-3" style="width: 500px;">
+
+    <div id="@Id" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @foreach (var url in ImageUrls)
+            {
+                <div class="carousel-item active">
+                    <img src="@url" class="d-block w-100" alt="...">
+                </div>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#@Id" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#@Id" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="card-body p-0">
+        <div class="border m-2 p-2">
+            <p class="sh-font-default fs-12">@Town - @Id</p>
+            <p class="sh-font-title fs-18">@Name</p>
+            <p class="sh-font-default fw-bold fs-18 mt-3">€ @Price</p>
+            <div class="d-flex justify-content-around">
+                <p class="sh-font-default fs-14">Площадь: @Area м2</p>
+                <p class="sh-font-default fs-14">Спальни: @BedroomsCount</p>
+            </div>
+            <p class="sh-font-default fs-14 text-center">Терраса: @Terrace м2</p>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Id { get; set; } = "";
+    [Parameter]
+    public string Town { get; set; } = "";
+    [Parameter]
+    public string Name { get; set; } = "";
+    [Parameter]
+    public decimal Price { get; set; }
+    [Parameter]
+    public int Area { get; set; }
+    [Parameter]
+    public int BedroomsCount { get; set; }
+    [Parameter]
+    public int Terrace { get; set; }
+    [Parameter]
+    public IEnumerable<string> ImageUrls { get; set; }
+}

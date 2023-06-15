@@ -1,6 +1,69 @@
-﻿@{
-    
-}
-<img src="~/resources/images/index-image.png" class="img-fluid">
-  <div class="d-flex justify-content-center position-relative sh-font-title fs-96 fw-bold">Spain House</div>
-</img>
+﻿@model List<HouseViewModel>
+@using SpainHouse.Views.Components
+
+<div class="main-header">
+
+    <div class="container">
+        <div class="text-center sh-font-title fs-96 fw-bold color-primary">Spain House</div>
+        <div class="text-center hs-font-default fs-18 fw-bold color-primary mt-3">
+            РАССКАЖИТЕ НАМ, ЧТО ТАКОЕ ЖИЗНЬ ВАШЕЙ МЕЧТЫ, <br>
+            И МЫ НАЙДЕМ ЕЕ ДЛЯ ВАС
+        </div>
+    </div>
+
+</div>
+  
+
+<div class="d-flex justify-content-around m-5 p-5">
+    <div style="max-width: 600px;">
+        <div class="sh-font-title fs-35 color-secondary mb-4 mt-5">
+            О НАС
+        </div>
+        <div class="sh-font-default">
+            SPAIN HOUSE - ваш консультант по
+            недвижимости на южном побережье
+            Испании. Наш 10-летний опыт дает нам
+            возможность устанавливать высокие
+            стандарты, добиваясь фантастических
+            результатов, работая большой
+            профессиональной командой, где
+            с первых дней работы основной
+            траекторией для развития стали
+            честность и абсолютное желание
+            помогать клиентам, улучшая их жизнь.
+            Обращаясь к нам, Вы можете быть
+            уверены, что получите лучший совет
+            и решение, с учетом всех Ваших
+            потребностей. Ведь приоритет и задача
+            для нас - найти дом Вашей мечты.
+        </div>
+        <div class="sh-font-title fs-18 color-secondary mb-3 mt-4">
+            БУДЕМ РАДЫ ПОМОЧЬ ВАМ!
+        </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center">
+        <img class="position-absolute" src="~/resources/images/IMG_4948 3.png" width="367px" height="499px">
+        <div class="position-relative border" style="width: 492px; height: 387px; z-index: -1;"></div>
+    </div>
+</div>
+
+
+<div class="m-5 px-5 text-center">
+    <div class="sh-font-title fs-35 color-secondary mb-4 mt-5">
+       РЕКОМЕНДУЕМЫЕ ОБЪЕКТЫ
+    </div>
+    <div class="sh-font-default">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt
+        congue ligula in rutrum. Morbi ne lacus condimentum, hendrerit mi eu,
+    </div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            @(await Html.RenderComponentAsync<HouseCard>(RenderMode.WebAssemblyPrerendered, item)) 
+        }
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-lg m-5 sh-font-title fs-18">весь каталог</button>
+</div>

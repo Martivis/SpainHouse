@@ -1,14 +1,25 @@
 ﻿.sh-font-title {
-    font-family: 'Playfair Display SC', sans-serif;  
+    font-family: 'Playfair Display SC', sans-serif; 
 }
 
-.hs-style-default {
+.hs-font-default {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16pt;
+}
+
+.fs-12 {
+    font-size: 12pt;
+}
+
+.fs-14 {
+    font-size: 14pt;
 }
 
 .fs-16 {
     font-size: 16pt;
+}
+
+.fs-18 {
+    font-size: 18pt;
 }
 
 .fs-20 {
@@ -17,6 +28,10 @@
 
 .fs-24 {
     font-size: 24pt;
+}
+
+.fs-35 {
+    font-size: 35pt;
 }
 
 .fs-96 {

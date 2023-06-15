@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/SpainHouse.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/icons.css" />
     <link rel="stylesheet" href="~/css/font-styles.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-white fixed-top">
+        <nav class="navbar navbar-light bg-white">
             <div class="container-fluid">
 
                 <div class="sh-logo my-3 mx-5"></div>
@@ -76,15 +77,22 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main" style="margin-bottom: 300px;">
+        @RenderBody()
+    </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - SpainHouse - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer" style="background-color: #808080; height: 300px;">
+        
+        <div class="mt-5 text-center">
+            <div class="sh-logo-sm m-4"></div>
+
+            <div class="mt-4 d-flex justify-content-center">
+                <div class="icon-instagram-white"></div>
+                <div class="icon-facebook-white"></div>
+            </div>
+
+            <p class="sh-font-default fs-14">© Все права защищены. Агентство недвижимости Spain House</p>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

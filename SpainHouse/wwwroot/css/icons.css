@@ -34,8 +34,26 @@
     height: 29px;
 }
 
+.icon-instagram-white {
+    background-image: url("../resources/svg/instagram-white.svg");
+    width: 29px;
+    height: 29px;
+}
+
+.icon-facebook-white {
+    background-image: url("../resources/svg/facebook-white.svg");
+    width: 29px;
+    height: 29px;
+}
+
 .sh-logo {
     background-image: url("../resources/svg/sh-logo.svg");
     width: 255px;
     height: 60px;
+}
+
+.sh-logo-sm {
+    background-image: url("../resources/svg/1 белый 1.svg");
+    width: 110px;
+    height: 92px;
 }
